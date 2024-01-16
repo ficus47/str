@@ -2,8 +2,8 @@ from math import sqrt
 
 import streamlit as stl
 
-from sausisse.calcule import *
-from sausisse.expressions_math import *
+from calcule import *
+from expressions_math import *
 
 
 def fun():
