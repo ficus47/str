@@ -148,4 +148,3 @@ webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.7.0
 zipp==3.17.0
-pyarrow==3.0.0
