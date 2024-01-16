@@ -2,8 +2,8 @@ from math import sqrt
 
 import streamlit as stl
 
-from calcule import *
-from expressions_math import *
+from sausisse.calcule import *
+from sausisse.expressions_math import *
 
 
 def fun():
@@ -166,7 +166,7 @@ elif c == "calculer un volume (en devellopement)":
 elif c == "chatons mignon":
   stl.balloons()
   last_container = stl.container()
-  last_container.subheader("chatons mignon")
+  #last_container.subheader("chatons mignon")
   #last_container.image("chaton2.png")
   #last_container.image("chaton1.png")
 
