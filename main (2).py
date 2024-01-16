@@ -167,8 +167,8 @@ elif c == "chatons mignon":
   stl.balloons()
   last_container = stl.container()
   last_container.subheader("chatons mignon")
-  last_container.image("chaton2.png")
-  last_container.image("chaton1.png")
+  #last_container.image("chaton2.png")
+  #last_container.image("chaton1.png")
 
 elif c == "map":
   tlc = stl.container()
