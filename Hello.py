@@ -4,6 +4,7 @@ import streamlit as stl
 
 from calcule import *
 from expressions_math import *
+import random
 
 
 def fun():
@@ -29,7 +30,8 @@ c = stl.sidebar.selectbox(options=[
   "map",
   "pourcentage",
   "Fonctions trigonométriques",
-  "comparer deux textes"
+  "comparer deux textes",
+  "exercices sur Pythagore"
   
 ], label='**choisissez svp**, vous pouvez recherchez')
 
@@ -223,6 +225,18 @@ elif c == "comparer deux textes":
 
 
 
-else:
-  stl.write("vous pouvez chercher dans la box de selections :)")
-  
+elif c == "exercices sur Pythagore":
+  container10 = st.container()
+  cote1, cote2 = random.randint(1,200), random.randint(1,200)
+  hypotenus = random.randint(1,200)
+
+  while sqrt(((cote1**2) + (cote2**2))) != hypotenus:
+    cote1, cote2 = random.randint(1,200), random.randint(1,200)
+    hypotenus = random.randint(1,200)
+
+  container10.write(f"si mon premier cote est de {cote1} et que mon deuxieme cote est de {cote2}, alors de combien est mon hypotenus ?")
+  saucisse = container10.text_input("valeur de l'hypotenus")
+  if saucisse == hypotenus:
+    container10.write("vous avez reussi !")
+    container10.balloons()
+
