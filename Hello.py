@@ -7,17 +7,6 @@ from expressions_math import *
 import random
 
 
-def exos():
-  cote1, cote2 = random.randint(1,200), random.randint(1,200)
-  hypotenus = random.randint(1,200)
-
-  while sqrt(((cote1**2) + (cote2**2))) != hypotenus:
-    cote1, cote2 = random.randint(1,200), random.randint(1,200)
-    hypotenus = random.randint(1,200)
-
-    stl.session_state["cote1"],stl.session_state["cote2"] = cote1, cote2
-    stl.session_state["hypotenus"] = hypotenus
-
 
 def fun():
   stl.balloons()
@@ -43,7 +32,7 @@ c = stl.sidebar.selectbox(options=[
   "pourcentage",
   "Fonctions trigonométriques",
   "comparer deux textes",
-  "exercices sur Pythagore"
+
   
 ], label='**choisissez svp**, vous pouvez recherchez')
 
@@ -236,16 +225,3 @@ elif c == "comparer deux textes":
     container9.write("les deux textes sont différents")
 
 
-
-elif c == "exercices sur Pythagore":
-  container10 = stl.container()
-  exos()
-  stl.button("reset ...", on_click=exos)
-  a, b = stl.session_state["cote1"], stl.session_state["cote2"] 
-  
-
-  container10.write(f"si mon premier cote est de {a} et que mon deuxieme cote est de {a}, alors de combien est mon hypotenus ?")
-  saucisse = container10.text_input("valeur de l'hypotenus")
-  if saucisse == stl.session_state["hypotenus"]:
-    container10.write("vous avez reussi !")
-    container10.balloons()
