@@ -7,6 +7,18 @@ from expressions_math import *
 import random
 
 
+def exos():
+  cote1, cote2 = random.randint(1,200), random.randint(1,200)
+  hypotenus = random.randint(1,200)
+
+  while sqrt(((cote1**2) + (cote2**2))) != hypotenus:
+    cote1, cote2 = random.randint(1,200), random.randint(1,200)
+    hypotenus = random.randint(1,200)
+
+    stl.session_state["cote1"],stl.session_state["cote2"] = cote1, cote2
+    stl.session_state["hypotenus"] = hypotenus
+
+
 def fun():
   stl.balloons()
   stl.snow()
@@ -23,9 +35,9 @@ c = stl.sidebar.selectbox(options=[
   "develloper",
   "résoudre une equation", 
   "factoriser une expression",
-  "calculer une aire (en devellopement)",
+  "calculer une aire (en developpement)",
   "racine cube",
-  "calculer un volume (en devellopement)",
+  "calculer un volume (en developpement)",
   "chatons mignon",
   "map",
   "pourcentage",
@@ -227,16 +239,12 @@ elif c == "comparer deux textes":
 
 elif c == "exercices sur Pythagore":
   container10 = stl.container()
-  cote1, cote2 = random.randint(1,200), random.randint(1,200)
-  hypotenus = random.randint(1,200)
+  exos()
+  st.button("reset ...", on_click=exos)
+  
 
-  while sqrt(((cote1**2) + (cote2**2))) != hypotenus:
-    cote1, cote2 = random.randint(1,200), random.randint(1,200)
-    hypotenus = random.randint(1,200)
-
-  container10.write(f"si mon premier cote est de {cote1} et que mon deuxieme cote est de {cote2}, alors de combien est mon hypotenus ?")
+  container10.write(f"si mon premier cote est de {stl.session_state["cote1"]} et que mon deuxieme cote est de {stl.session_state["cote2"]}, alors de combien est mon hypotenus ?")
   saucisse = container10.text_input("valeur de l'hypotenus")
-  if saucisse == hypotenus:
+  if saucisse == stl.session_state["hypotenus"]:
     container10.write("vous avez reussi !")
     container10.balloons()
-
