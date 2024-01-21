@@ -241,9 +241,10 @@ elif c == "exercices sur Pythagore":
   container10 = stl.container()
   exos()
   st.button("reset ...", on_click=exos)
+  a, b = stl.session_state["cote1"], stl.session_state["cote2"] 
   
 
-  container10.write(f"si mon premier cote est de {stl.session_state["cote1"]} et que mon deuxieme cote est de {stl.session_state["cote2"]}, alors de combien est mon hypotenus ?")
+  container10.write(f"si mon premier cote est de {a} et que mon deuxieme cote est de {a}, alors de combien est mon hypotenus ?")
   saucisse = container10.text_input("valeur de l'hypotenus")
   if saucisse == stl.session_state["hypotenus"]:
     container10.write("vous avez reussi !")
