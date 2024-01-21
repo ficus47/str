@@ -226,7 +226,7 @@ elif c == "comparer deux textes":
 
 
 elif c == "exercices sur Pythagore":
-  container10 = st.container()
+  container10 = stl.container()
   cote1, cote2 = random.randint(1,200), random.randint(1,200)
   hypotenus = random.randint(1,200)
 
