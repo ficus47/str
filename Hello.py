@@ -240,7 +240,7 @@ elif c == "comparer deux textes":
 elif c == "exercices sur Pythagore":
   container10 = stl.container()
   exos()
-  st.button("reset ...", on_click=exos)
+  stl.button("reset ...", on_click=exos)
   a, b = stl.session_state["cote1"], stl.session_state["cote2"] 
   
 
