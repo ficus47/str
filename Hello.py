@@ -32,6 +32,7 @@ c = stl.sidebar.selectbox(options=[
   "pourcentage",
   "Fonctions trigonométriques",
   "comparer deux textes",
+  "calculer",
 
   
 ], label='**choisissez svp**, vous pouvez recherchez')
@@ -224,4 +225,9 @@ elif c == "comparer deux textes":
   else:
     container9.write("les deux textes sont différents")
 
+elif c ==  "calculer":
+  container10 = stl.container()
+  number = container10.text_input("entrez le calcule")
+  container10.write(simplifi(number))
 
+  
