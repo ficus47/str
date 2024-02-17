@@ -6,7 +6,8 @@ from calcule import *
 from expressions_math import *
 import random
 
-
+def later(a):
+  pass
 
 def fun():
   stl.balloons()
@@ -230,7 +231,7 @@ elif c == "calculer":
   container10 = stl.container()
   number = container10.text_input("entrez le calcule")
   container10.write(simplifi(number))
-"""
+later("""
 elif c == "exercices sur pythagore":
   con11 = stl.container()
   hyp = random.randint(1, 200)
@@ -246,5 +247,5 @@ elif c == "exercices sur pythagore":
       conv11.button("un nouvel exercice")
     else:
       con11.write("ce n'est pas ca ! essayé autre chose")
-"""
+""")
 
