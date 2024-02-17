@@ -33,6 +33,7 @@ c = stl.sidebar.selectbox(options=[
   "Fonctions trigonométriques",
   "comparer deux textes",
   "calculer",
+  "exercices sur pythagore"
 
   
 ], label='**choisissez svp**, vous pouvez recherchez')
@@ -225,9 +226,26 @@ elif c == "comparer deux textes":
   else:
     container9.write("les deux textes sont différents")
 
-elif c ==  "calculer":
+elif c == "calculer":
   container10 = stl.container()
   number = container10.text_input("entrez le calcule")
   container10.write(simplifi(number))
 
-  
+elif c == "exercices sur pythagore":
+  con11 = stl.container()
+  hyp = random.randint(200)
+  cote1, cote2 = 0,0
+  while sqrt(cote1**2+cote2**2) != hyp:
+    cote1, cote2 = random.randint(200), random.randint(200)
+    
+  con11.write(f"considerons un triangle rectangle avec un coté de {cote1} et un autre de {cote2}. Quel est alors la longeur de l'hypotenus ?")
+  input_us = con11.text_input("entrez la longeur de l'hypotenus")
+  if input_us.isdigit():
+    if int(input_us) == hyp:
+      con11.Write("bravo ! ")
+      conv11.button("un nouvel exercice")
+    else:
+      con11.write("ce n'est pas ca ! essayé autre chose")
+
+  else:
+    con11.write("ce n'est pas ca ! essayé autre chose")
