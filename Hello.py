@@ -241,7 +241,7 @@ elif c == "exercices sur pythagore":
   con11.write(f"considerons un triangle rectangle avec un coté de {cote1} et un autre de {cote2}. Quel est alors la longeur de l'hypotenus ?")
   input_us = con11.text_input("entrez la longeur de l'hypotenus")
   if input_us.isdigit():
-    if int(input_us) == hyp:
+    if float(input_us) == float(hyp):
       con11.Write("bravo ! ")
       conv11.button("un nouvel exercice")
     else:
