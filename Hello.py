@@ -233,10 +233,10 @@ elif c == "calculer":
 
 elif c == "exercices sur pythagore":
   con11 = stl.container()
-  hyp = random.randint(200)
-  cote1, cote2 = 0,0
+  hyp = random.randint(1, 200)
+  cote1, cote2 = random.randint(1, 200), random.randint(1, 200)
   while sqrt(cote1**2+cote2**2) != hyp:
-    cote1, cote2 = random.randint(200), random.randint(200)
+    cote1, cote2 = random.randint(1, 200), random.randint(1, 200)
     
   con11.write(f"considerons un triangle rectangle avec un coté de {cote1} et un autre de {cote2}. Quel est alors la longeur de l'hypotenus ?")
   input_us = con11.text_input("entrez la longeur de l'hypotenus")
