@@ -248,5 +248,3 @@ elif c == "exercices sur pythagore":
       con11.write("ce n'est pas ca ! essayé autre chose")
 """
 
-  else:
-    con11.write("ce n'est pas ca ! essayé autre chose")
