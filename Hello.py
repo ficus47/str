@@ -34,6 +34,7 @@ c = stl.sidebar.selectbox(options=[
   "Fonctions trigonométriques",
   "comparer deux textes",
   "calculer",
+  "longeur d'un text",
   #"exercices sur pythagore"
 
   
@@ -248,4 +249,10 @@ elif c == "exercices sur pythagore":
     else:
       con11.write("ce n'est pas ca ! essayé autre chose")
 """)
+
+elif c == "longeur d'un text":
+  container11 = stl.container()
+
+  text = container11.text_input("entrez un texte a mesurer :")
+  container11.write(f"la longeur d texte que vous avez entré est : {len(text)}")
 
