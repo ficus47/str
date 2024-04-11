@@ -250,7 +250,7 @@ elif c == "exercices sur pythagore":
       con11.write("ce n'est pas ca ! essayé autre chose")
 """)
 
-elif c == "longeur d'un text":
+if c == "longeur d'un text":
   container11 = stl.container()
 
   text = container11.text_input("entrez un texte a mesurer :")
