@@ -232,7 +232,7 @@ elif c == "calculer":
   container10 = stl.container()
   number = container10.text_input("entrez le calcule")
   container10.write(simplifi(number))
-later("""
+  later("""
 elif c == "exercices sur pythagore":
   con11 = stl.container()
   hyp = random.randint(1, 200)
