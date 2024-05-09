@@ -256,3 +256,11 @@ if c == "longeur d'un text":
   text = container11.text_input("entrez un texte a mesurer :")
   container11.write(f"la longeur d texte que vous avez entré est : {len(text)}")
 
+st.html("""
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsense2.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px;"
+     data-ad-client="YOUR_AD_CLIENT_ID"
+     data-ad-slot="YOUR_AD_SLOT_ID">
+</ins>
+""")
