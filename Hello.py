@@ -1,5 +1,5 @@
 from math import sqrt
-
+from streamlit.components.v1 import html
 import streamlit as stl
 
 from calcule import *
@@ -256,7 +256,7 @@ if c == "longeur d'un text":
   text = container11.text_input("entrez un texte a mesurer :")
   container11.write(f"la longeur d texte que vous avez entré est : {len(text)}")
 
-st.html("""
+html("""
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsense2.js"></script>
 <ins class="adsbygoogle"
      style="display:inline-block;width:728px;height:90px;"
