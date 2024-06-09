@@ -1,5 +1,5 @@
 from math import sqrt
-from streamlit.components.v1 import html
+from streamlit.components.v1.components import html
 import streamlit as stl
 
 from calcule import *
