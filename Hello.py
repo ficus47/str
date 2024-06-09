@@ -257,10 +257,6 @@ if c == "longeur d'un text":
   container11.write(f"la longeur d texte que vous avez entré est : {len(text)}")
 
 html("""
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsense2.js"></script>
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px;"
-     data-ad-client="pub-8075907034534804"
-     data-ad-slot="anonymous">
-</ins>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8075907034534804"
+     crossorigin="anonymous"></script>
 """)
