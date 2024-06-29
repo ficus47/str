@@ -259,7 +259,7 @@ if c == "longeur d'un text":
 st.write("si vous voulez me soutenir clicker sur ce lien (vous pouvez clicker puis fermer la page imediatement):")
 st.write("[le lien](https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b)")
 
-html("""<script type="text/javascript">
+("""<script type="text/javascript">
 	atOptions = {
 		'key' : 'c300f51b0b2c3c097779e8a8a97885bf',
 		'format' : 'iframe',
