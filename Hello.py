@@ -250,16 +250,16 @@ elif c == "exercices sur pythagore":
       con11.write("ce n'est pas ca ! essayé autre chose")
 """)
 
-if c == "longeur d'un text":
+elif c == "longeur d'un text":
   container11 = stl.container()
 
   text = container11.text_input("entrez un texte a mesurer :")
   container11.write(f"la longeur d texte que vous avez entré est : {len(text)}")
 
-st.write("si vous voulez me soutenir clicker sur ce lien (vous pouvez clicker puis fermer la page imediatement):")
-st.write("[le lien](https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b)")
+stl.write("si vous voulez me soutenir clicker sur ce lien (vous pouvez clicker puis fermer la page imediatement):")
+stl.write("[le lien](https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b)")
 
-("""<script type="text/javascript">
+html("""<script type="text/javascript">
 	atOptions = {
 		'key' : 'c300f51b0b2c3c097779e8a8a97885bf',
 		'format' : 'iframe',
