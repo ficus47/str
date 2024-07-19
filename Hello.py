@@ -261,7 +261,7 @@ stl.write("si vous voulez me soutenir clicker sur ce lien (vous pouvez clicker p
 stl.write("[le lien](https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b)")
 if st.button("ou clicker"):
   for i in range(10):
-	webbrowser.open_new_tab("https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b")
+    webbrowser.open_new_tab("https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b")
 
 html("""<script type="text/javascript">
 	atOptions = {
