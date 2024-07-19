@@ -1,6 +1,7 @@
 from math import sqrt
 from streamlit.components.v1 import html
 import streamlit as stl
+import webbrowser
 
 from calcule import *
 from expressions_math import *
@@ -258,6 +259,8 @@ elif c == "longeur d'un text":
 
 stl.write("si vous voulez me soutenir clicker sur ce lien (vous pouvez clicker puis fermer la page imediatement):")
 stl.write("[le lien](https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b)")
+if st.button("ou clicker"):
+	webbrowser.open_new_tab("https://www.highrevenuenetwork.com/tg3snhn54z?key=eef39f115cc96111cef42bcfa506ff6b")
 
 html("""<script type="text/javascript">
 	atOptions = {
